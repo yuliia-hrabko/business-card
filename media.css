@@ -1,0 +1,83 @@
+@media screen and (min-width: 1024px) {
+    #container {
+        height: 100%;
+    }
+
+    .card {
+        max-width: 838px;
+        height: 449px;
+        padding: 30px 50px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        box-shadow: 0 2px 30px #000;
+        border: none;
+    }
+
+    .card-img {
+        height: 365px;
+        flex-basis: 50%;
+    }
+
+    .card-info {
+        flex-basis: 50%;
+    }
+
+    .card-name {
+        font-size: 45px;
+        text-align: left;
+    }
+
+    .card-position {
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .card-social {
+        display: block;
+    }
+
+    .card-social svg {
+        width: 56px;
+        height: 56px;
+    }
+
+    .card-social span {
+        display: block;
+        margin-left: 18px;
+        color: #000;
+        font-size: 25px;
+    }
+ 
+    .card-social a {
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 10px;
+        text-decoration: none;
+       
+    }
+
+    .card-social a:hover span {
+        color: #da4153;
+    }
+
+    .card-social a:hover svg {
+        animation: shake 2s;
+    }
+
+    @keyframes shake {
+        0%, 50%, 100% {
+          transform: rotate(0deg);
+        }
+        
+        10%, 30% {
+          transform: rotate(-10deg);
+        }
+        
+        20%, 40% {
+          transform: rotate(10deg);
+        }
+        
+      }
+
+}
